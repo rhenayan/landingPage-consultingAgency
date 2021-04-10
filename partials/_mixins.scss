@@ -1,0 +1,99 @@
+//BOX//
+
+@mixin box($width, $height:$width){
+    width: $width;
+    height: $height;
+}
+
+
+
+@mixin padding($y, $x:$y) {
+    padding: $y * 1rem $x *1rem;
+}
+
+
+
+/*===========CENTERING==========*/
+
+// FLEXBOX //
+
+// Vertical Direction
+
+@mixin flex-column {
+    display:flex;
+    flex-direction:column;
+}
+
+// Flex Centering //
+
+@mixin flex-center {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin flex-center-col {
+    @include flex-center;
+    flex-direction: column;
+    
+}
+
+
+@mixin flex-center-hor {
+    display:flex;
+    justify-content: center;
+}
+
+@mixin flex-center-vert {
+    display:flex;
+    align-items: center;
+}
+
+
+// GRID //
+
+@mixin grid-center {
+    display: grid;
+    place-items: center;
+    
+}
+
+
+/*===========BACKGROUND==========*/
+
+// COVER BACKGROUND //
+
+@mixin bg-cover {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+}
+
+
+// PARALLAX BACKGROUND //
+
+@mixin bg-parallax {
+    @include bg-cover;
+    background-attachment: fixed;
+    
+}
+
+
+/*===========TRANSITION==========*/
+
+@mixin transition($state) {
+    transition: .5s $state;
+}
+
+
+/*===========PSEUDO==========*/
+
+@mixin overlay($rgba) {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: $rgba;
+}
+
+

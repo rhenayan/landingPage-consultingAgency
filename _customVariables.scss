@@ -1,0 +1,38 @@
+
+@import './node_modules/bootstrap/scss/variables';
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@300;400&family=Spectral:wght@500;600&display=swap');
+
+// Main Colors
+
+$blue: #143365;
+$white: #FFE7AD;
+$gray: #434343;
+$yellow: #ffc847;
+
+$font-family-base:     'Karla', sans-serif;
+$font-family-heading:  'Spectral', serif;
+
+$navbar-light-color:  #000;
+$navbar-light-hover-color:  #fff;
+$navbar-light-active-color:  #fff;
+
+
+$card-border-radius: 0rem;
+$card-border-color: $yellow;
+
+
+
+$body-bg: $white;
+$main-bg: $blue;
+$secondary-bg: $yellow;
+$overlay-bg: $yellow;
+
+
+$heading-text-color: $yellow;
+$main-text-color: $white;
+
+
+
+
+@import './node_modules/bootstrap/scss/variables';
+@import './node_modules/bootstrap/scss/bootstrap';

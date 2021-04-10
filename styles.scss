@@ -1,0 +1,249 @@
+
+// $navbar-light-toggler-border-color: transparent;
+// $navbar-nav-link-padding-x:   2rem;
+// $navbar-padding-y:                 2rem / 2;
+
+// $navbar-dark-color:  #4287f5;
+
+
+
+@import "./node_modules/bootstrap/scss/bootstrap";
+@import 'customVariables';
+@import 'custom';
+
+/*******regular css**********/
+
+
+// @import './partials/mixins';
+
+// body {
+//     display:grid;
+//     grid-template-columns: 4rem 1fr 4rem;
+//     grid-auto-rows: auto;
+//     row-gap: 5rem;
+
+//     > * {
+//         grid-column: 2;
+//     }
+
+// }
+
+
+// header {
+//     grid-column: 1 / -1;
+   
+
+//     .navbar {
+
+//         border-radius: 20px;
+//         width: 80%;
+//         margin: auto;
+//         background-color:rgba(#ffffff, 0.4);
+//         transition: .5s ease;
+//     }
+
+//     .scrolled {
+//         background-color: rgba(#ffffff, 1);
+//         position:fixed;
+//         top: 2px !important;
+       
+//     }
+    
+//     .fixed-top {
+//         top: 30px;
+//     }
+
+
+    
+//     .hero {
+//         height: 100vh;
+//         background-image: url(assets/images/hero-bg.jpg);
+//         @include bg-parallax;
+        
+    
+//     .text {
+
+//     padding-top: 15rem;
+
+//     }
+
+//     .text--big {
+//        font-weight: 700;
+//        line-height: 1.0;
+
+//    }
+
+//    .text--small {
+//        margin-top: 2rem;
+//    }
+
+//    @media screen and (max-width: 768px) {
+
+    
+//     .text--big{
+//         font-size: 3.9rem;
+//     }
+
+//    }
+// }
+// }
+
+
+// .about {
+//         // border: 2px solid black; 
+    
+//     .info {
+//         @include flex-center
+//     }
+
+//     .image {
+//         height: 600px;
+//         background-image: url('assets/images/about-us.jpg');
+//         @include bg-cover;
+
+//     }
+
+//     .text {
+//        min-height: 320px;
+//         margin-left: -105px;
+//         padding: 2rem;
+//         @include flex-center-hor;
+//         flex-direction:column;
+
+//     h1 {
+//         font-weight: 700;
+//         letter-spacing: .2rem;
+//     }
+       
+
+//     .btn {
+//         width: 100%;
+//         max-width: 150px;
+//     }
+
+//     }
+
+
+ 
+//     @media screen and (max-width: 767px) {
+   
+//         grid-column: 1 / -1;
+       
+
+//         .text {
+//             margin-top: -105px;
+//             margin-left: 0;
+    
+//         }
+    
+// }
+
+// }
+
+
+// .services {
+     
+//     min-height: 150vh;
+//     background-image: url(assets/images/service-bg.jpg);
+//     @include bg-cover;
+//     position:relative;
+  
+    
+//     .overlay {
+//        @include overlay( linear-gradient(to right, rgba(#0f2027, 0.7), rgba(#203a43, 0.3), rgba(#2c5364, 0.2)));
+       
+//     }
+
+//    .cards {
+        
+//         width: 70%;
+//         max-width: 700px;
+//         background-color: transparent;
+
+//    }
+
+//    .card {
+//        background-color: transparent;
+//        border: 1px solid black;
+//    }
+
+//    .card-img-top {
+//        padding-bottom: 1rem;
+//    }
+
+//     @media screen and (max-width: 767px) {
+       
+//         grid-column: 1 / -1;
+
+//         .cards {
+        
+//             width: 100%;
+           
+    
+//        }
+
+//     }
+
+// }
+
+
+// .team {
+
+//     .banner {
+//         @include flex-center-col;
+    
+//     }
+
+//     .card {
+    
+//         border: none;
+//         position:relative;
+//         overflow: hidden;
+//     }
+   
+//     .card::before{
+//         position:absolute;
+//         content: '';
+//         background-color: rgba(0,0,0,0.5);
+//         width: 80%;
+//         height: 220%;
+//         top:-50%;
+//         left: -100%;
+//         z-index:5;
+//         transform:rotate(20deg);
+//         transform-origin: center top 0;
+//         @include transition(ease);
+//     }
+
+
+//     .card:hover::before {
+//         left: 15%;
+//     }
+//     img {
+//         width: 100%;
+//     }
+
+//     .card-text {
+//         padding: 0 1rem;
+//         position:absolute;
+//         top:-100%;
+//         left: 0;
+//         z-index: 5;
+//         transition: .7s ease ;
+//     }
+
+//     .card:hover .card-text {
+//         top: 75px;
+//     }
+
+//     @media screen and (max-width: 767px) {
+//         grid-column: 1 / -1 ;
+//     }
+
+// }
+
+// .col {
+//     border: 2px solid white;
+// }
+
+
