@@ -4,32 +4,45 @@
 
 // Main Colors
 
-$blue: #143365;
+$navy: #143365;
 $white: #FFE7AD;
 $gray: #434343;
 $yellow: #ffc847;
+$blue: #4361ee;
+
+
+
 
 $font-family-base:     'Karla', sans-serif;
 $font-family-heading:  'Spectral', serif;
 
-$navbar-light-color:  #000;
-$navbar-light-hover-color:  #fff;
-$navbar-light-active-color:  #fff;
+$navbar-light-color:  $navy;
+$navbar-light-hover-color:  $white;
+$navbar-light-active-color:  $white;
+$navbar-nav-link-padding-x:  1rem;
+$navbar-light-toggler-border-color: transparent;
+
+
+
+$btn-text-color: $yellow;
+$btn-text-color-hover: $white;
+$btn-background:$blue;
 
 
 $card-border-radius: 0rem;
 $card-border-color: $yellow;
 
-
-
 $body-bg: $white;
-$main-bg: $blue;
+$main-bg: $navy;
 $secondary-bg: $yellow;
 $overlay-bg: $yellow;
 
 
 $heading-text-color: $yellow;
 $main-text-color: $white;
+$navbar-bg-color:$white;
+
+
 
 
 

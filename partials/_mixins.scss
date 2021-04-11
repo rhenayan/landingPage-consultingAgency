@@ -81,7 +81,7 @@
 
 /*===========TRANSITION==========*/
 
-@mixin transition($state) {
+@mixin transition-all($state) {
     transition: .5s $state;
 }
 
