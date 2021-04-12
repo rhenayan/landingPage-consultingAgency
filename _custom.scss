@@ -2,7 +2,7 @@
 @import './partials/mixins';
 @import 'customVariables';
 
-
+/*--======================OVERRIDES====================--*/
 
 html {
     scroll-behavior: smooth;
@@ -23,16 +23,12 @@ html {
    
 }
 
-
-
 body {
     display:grid;
     grid-template-columns: 2rem 1fr 2rem;
     grid-auto-rows: auto;
     row-gap: 5rem;
     background-color: rgba($main-bg, 0.7);
-   
-  
 
     > * {
             grid-column: 2;
@@ -41,7 +37,7 @@ body {
 }
 
 
-
+     /**************NAVBAR******************/
 header {
     grid-column: 1 / -1;
    
@@ -52,6 +48,12 @@ header {
         margin: auto;
         background-color:rgba($navbar-bg-color, 0.5);
         transition: .5s ease;
+
+        .navbar-brand {
+            letter-spacing: .2rem;
+            text-transform: uppercase;
+            font-weight: 500;
+        }
 
         .nav-link {
             font-size: 1.2rem;
@@ -86,6 +88,10 @@ header {
         top: 30px;
     }
 
+
+
+    /**************HERO******************/
+
     .hero {
         height: 100vh;
         background-image: url(assets/images/hero-bg.jpg);
@@ -109,6 +115,7 @@ header {
         font-family: $font-family-heading;
        font-weight: 800;
        line-height: 0.8;
+       letter-spacing: .2rem;
        color: $heading-text-color;
       
 
@@ -130,6 +137,8 @@ header {
 }
 }
 
+
+     /**************ABOUT THE COMPANY******************/
 
 .about {
         // border: 2px solid black; 
@@ -153,6 +162,7 @@ header {
         min-height: 320px;
         margin-left: -100px;
         padding: 2rem;
+       
         @include flex-center-hor;
         flex-direction:column;
         background-color: rgba($main-bg, 0.9);
@@ -161,6 +171,7 @@ header {
     h1 {
         font-weight: 700;
         text-transform: capitalize;
+        letter-spacing: .2rem;
         color:  $heading-text-color;
         // letter-spacing: .2rem;
     }
@@ -190,7 +201,7 @@ header {
 
 }
 
-
+     /**************SERVICES******************/
 .services {
      
     min-height: 100vh;
@@ -209,6 +220,7 @@ header {
         
         width: 70%;
         max-width: 700px;
+        padding: 3rem 0;
         background-color: transparent;
 
    }
@@ -248,7 +260,7 @@ header {
 
 
 
-
+     /**************TEAM******************/
 .team {
     grid-column: 1 / -1 ;
 
@@ -304,7 +316,8 @@ header {
         h1{
             font-family: $font-family-heading;
             color:  $heading-text-color;
-            font-weight: 700;    
+            font-weight: 700;  
+            letter-spacing: .2rem;  
         }
     
       
@@ -339,10 +352,9 @@ header {
         }
     }
 }
-
-
+    /**************CONTACT US******************/
 .footer {
-    min-height: 100vh;
+    padding: 3rem 0;
     @include bg-cover;
     background-image: url(assets/images/footer-bg.jpg);
     grid-column: 1 / -1;
@@ -356,7 +368,7 @@ header {
 
     .contacts {
         min-height: 300px;
-        margin: 0 auto -80px;
+        margin: 0 auto -50px;
         z-index: 2;
         color: $gray;
         
@@ -367,6 +379,7 @@ header {
             h4 {
                 font-family: $font-family-heading;
                 font-weight: 700;
+              
             }
 
             .bi {
@@ -386,9 +399,9 @@ header {
             font-family: $font-family-heading;
             color: $heading-text-color;
             font-weight: 700;
+            letter-spacing: .2rem;
         }
     }
-
 
     @media screen and (min-width: 992px) {
 

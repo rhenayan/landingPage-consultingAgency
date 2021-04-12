@@ -12343,11 +12343,11 @@ input[type="button"].btn-block {
 }
 
 .navbar-light .navbar-brand {
-  color: rgba(0, 0, 0, 0.9);
+  color: #143365;
 }
 
 .navbar-light .navbar-brand:hover, .navbar-light .navbar-brand:focus {
-  color: rgba(0, 0, 0, 0.9);
+  color: #143365;
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -20555,11 +20555,11 @@ input[type="button"].btn-block {
 }
 
 .navbar-light .navbar-brand {
-  color: rgba(0, 0, 0, 0.9);
+  color: #143365;
 }
 
 .navbar-light .navbar-brand:hover, .navbar-light .navbar-brand:focus {
-  color: rgba(0, 0, 0, 0.9);
+  color: #143365;
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -24628,6 +24628,7 @@ a.text-dark:hover, a.text-dark:focus {
   visibility: hidden !important;
 }
 
+/*--======================OVERRIDES====================--*/
 html {
   scroll-behavior: smooth;
 }
@@ -24662,8 +24663,10 @@ body > * {
   grid-column: 2;
 }
 
+/**************NAVBAR******************/
 header {
   grid-column: 1 / -1;
+  /**************HERO******************/
 }
 
 header .navbar {
@@ -24673,6 +24676,12 @@ header .navbar {
   background-color: rgba(255, 231, 173, 0.5);
   -webkit-transition: .5s ease;
   transition: .5s ease;
+}
+
+header .navbar .navbar-brand {
+  letter-spacing: .2rem;
+  text-transform: uppercase;
+  font-weight: 500;
 }
 
 header .navbar .nav-link {
@@ -24728,6 +24737,7 @@ header .hero .text-big {
   font-family: "Spectral", serif;
   font-weight: 800;
   line-height: 0.8;
+  letter-spacing: .2rem;
   color: #ffc847;
 }
 
@@ -24741,6 +24751,7 @@ header .hero .text-small {
   }
 }
 
+/**************ABOUT THE COMPANY******************/
 .about .info {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -24786,6 +24797,7 @@ header .hero .text-small {
 .about .text h1 {
   font-weight: 700;
   text-transform: capitalize;
+  letter-spacing: .2rem;
   color: #ffc847;
 }
 
@@ -24804,6 +24816,7 @@ header .hero .text-small {
   }
 }
 
+/**************SERVICES******************/
 .services {
   min-height: 100vh;
   background-image: url(assets/images/service-bg.jpg);
@@ -24826,6 +24839,7 @@ header .hero .text-small {
 .services .cards {
   width: 70%;
   max-width: 700px;
+  padding: 3rem 0;
   background-color: transparent;
 }
 
@@ -24852,6 +24866,7 @@ header .hero .text-small {
   }
 }
 
+/**************TEAM******************/
 .team {
   grid-column: 1 / -1;
 }
@@ -24919,6 +24934,7 @@ header .hero .text-small {
   font-family: "Spectral", serif;
   color: #ffc847;
   font-weight: 700;
+  letter-spacing: .2rem;
 }
 
 @media screen and (min-width: 1024px) {
@@ -24959,8 +24975,9 @@ header .hero .text-small {
   }
 }
 
+/**************CONTACT US******************/
 .footer {
-  min-height: 100vh;
+  padding: 3rem 0;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -24979,7 +24996,7 @@ header .hero .text-small {
 
 .footer .contacts {
   min-height: 300px;
-  margin: 0 auto -80px;
+  margin: 0 auto -50px;
   z-index: 2;
   color: #434343;
 }
@@ -25009,6 +25026,7 @@ header .hero .text-small {
   font-family: "Spectral", serif;
   color: #ffc847;
   font-weight: 700;
+  letter-spacing: .2rem;
 }
 
 @media screen and (min-width: 992px) {
