@@ -95,7 +95,7 @@ header {
     .hero {
         height: 100vh;
         background-image: url(assets/images/hero-bg.jpg);
-        @include bg-cover;
+        @include bg-parallax;
         position:relative;
     
         &::before {
