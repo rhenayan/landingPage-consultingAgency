@@ -95,7 +95,6 @@ header {
     .hero {
         height: 100vh;
         background-image: url(assets/images/hero-bg.jpg);
-        background-attachment:scroll;
         @include bg-cover;
         position:relative;
     
